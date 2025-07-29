@@ -1,0 +1,103 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffe6f0, #ffccff);
+      font-family: 'Comic Sans MS', cursive;
+      color: #d10077;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      border: 4px solid #ff99cc;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px hotpink;
+      max-width: 400px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      animation: sparkle 1.5s infinite alternate;
+    }
+
+    @keyframes sparkle {
+      0% { text-shadow: 0 0 5px deeppink; }
+      100% { text-shadow: 0 0 15px hotpink; }
+    }
+
+    .yes-btn {
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    .yes-btn:hover {
+      background-color: #e60073;
+    }
+
+    .no-btn {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: gray;
+      text-decoration: underline;
+      cursor: pointer;
+      align-items: center;
+      justify-items: center;
+      display: inline-block;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border: 4px solid #ff66b2;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px hotpink;
+      z-index: 9999;
+      max-width: 300px;
+    }
+
+    .close-btn {
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .close-btn:hover {
+      background-color: #cc005f;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.4);
+      display: none;
+      z-index: 999;
+    }
